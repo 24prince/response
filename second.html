@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .header{
+                padding:10px;   
+                text-align: center;
+            }
+            a{
+                text-decoration: none;                
+                font-size:20px;    
+                color:crimson;                        
+            }
+            .link{
+                padding-left:10px;
+                padding-top:6px;
+                float:left;
+                padding-right:10px;                
+            }
+            .link:hover{
+                background-color: blanchedalmond;
+                border-radius: 10px;                
+                color:black;
+            }
+            .column{
+                float:left;
+            }
+            .list{
+                font-style:40px;
+                border:1px soid black;
+                background-color:aqua;
+                padding:5px;
+                margin-top:10px;
+                text-align: center;
+                
+            }
+            .nav{
+                width:100%; height:30px;
+            }
+            #side
+            {
+                width:20%; 
+                height:400px;
+            }
+            #firsth1{
+                font-size:40px; 
+                text-align:center; 
+                padding:10px;
+            }
+            #rightside
+            {
+                width:80%; 
+                height:400px;
+            }
+            #content
+            {
+                border-radius:20px; 
+                width:90%; 
+                height:150px; 
+                margin-left:30px;
+            }
+            @media (max-width:600px)
+            {
+                .nav{
+                    width:100%;
+                }
+                .link{
+                    width:25%;
+                    font-size:10px;
+                    height:30px;
+                    text-align: center;
+                }
+                .l{
+                    font-size: 10px;
+                }
+                #side
+                {
+                    width:100%;
+                    height:350px;
+                }
+                #rightside
+                {
+                    width:100%;
+                }
+                #content
+                {
+                    margin-left:10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header" style="background-color:skyblue; color:black; width:100%; height:150px;">
+            <h1>My Responsive Website</h1>
+            <h4>By Prince Giri</h4>
+        </div>
+        <div class="nav" style="background-color: aliceblue;">
+            <div class="link" id=first><a href="" class="l">Home</a></div>
+            <div class="link"><a href="" class="l" >Main Content</a></div>
+            <div class="link"><a href="" class="l">About us</a></div>
+            <div class="link"><a href="" class="l">Contact Us</a></div>
+        </div>
+        <div class="row">
+            <div class="column" id=side style="background-color: #bbb;;">
+                <h1  id="firsth1">Menu</h1><br>
+                <div class="list">Cricket</div>
+                <div class="list">Football</div>
+                <div class="list">Tenis</div>
+                <div class="list">Badminton</div>
+            </div>
+            <div class="column" id="rightside" style="background-color: #eee;">
+                <h1 style="font-size:40px; padding:10px;">Content</h1>
+                <div id="content" style="background-color:turquoise; ">
+                    <p style="font-size:30px; padding:15px;">Write Your Content Here.....</p>
+                </div>
+                <p style="color:blue; padding-left:50px;">Note:- You can write your content in above box...</p>
+            </div>
+        </div>
+    </body>
+</html>
